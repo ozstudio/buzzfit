@@ -1,0 +1,19 @@
+@mixin buttonCustom {
+    
+        padding: 12px 24px;
+        border: none;
+        outline: none;
+        border-radius: 50px;
+        
+        
+        color: $white;
+
+
+        &:hover{
+            color:$white;
+        }
+        
+
+    
+    
+}

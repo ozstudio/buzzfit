@@ -1,0 +1,81 @@
+@import './media\ queries';
+@import './colors';
+@import './button';
+
+%align-center{
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar{
+   // background:$tealLight;
+   max-width: 900px;
+   margin: 0 auto;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem calc(100vw -800px)/2;
+    z-index: 10;
+    position: relative;
+
+    @extend %align-center;
+
+    &__logo img{
+        max-width: 100%;
+
+    }
+
+    &__bars{
+        opacity: 0;
+
+        @include tablet{
+            opacity: 1;
+            position: absolute;
+            top:22px;
+            right: 20px;
+            font-size: 2rem;
+    
+        }
+
+
+    }
+
+    &__menu{
+        @include tablet{
+            display: none;
+        }
+
+        &--links{
+            color:$lParagraph;
+            margin-right: 1rem;
+            text-decoration: none;
+
+
+
+            button{
+                @include buttonCustom;
+                background-color: $teal;
+            }
+            @include tablet{
+                display: none;
+            }
+
+            &:hover{
+                color:$teal;
+                transition: all 0.5s ease;
+            }
+
+            
+
+
+        }
+
+        
+
+    }
+    
+   
+}
+
+

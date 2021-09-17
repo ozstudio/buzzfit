@@ -1,0 +1,622 @@
+@import 'navbar';
+@import './button';
+
+
+
+*{
+    box-sizing: border-box;;
+    margin: 0;
+    font-family: 'Kumbh Sans',san-serif;
+}
+@font-face {
+    font-family: maria;
+    src: url('/fonts/elements-mriya-grotesk-premium-sans-serif-typeface-M5QU9T-2018-09-22/TTF/MriyaGrotesk-Regular.ttf');
+  }
+
+
+//buzz section css
+
+.buzz{
+     
+    &__container{
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        justify-items: center;
+        margin: 0 auto;
+        z-index: 1;
+        width: 100%;
+        max-width: 800px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 3em;
+
+        &--left{
+            height: 100%;
+            width: 100%;
+           
+            
+            h1{
+                font-size: 230%;
+               color:$dHeadingBig;
+            }
+            p{
+            margin-top: 40px;
+            font-size: 120%;
+            color:$lParagraph;
+            }
+            button{
+                @include buttonCustom;
+                background-color: $teal;
+                margin-top: 24px;
+            }
+
+        }
+
+        @include tablet{
+            grid-template-columns: 1fr;
+            height:100%;
+
+        }
+
+        
+    }
+
+}
+.sliderLeaders{
+    
+   // justify-content: center;
+    display: flex;
+
+    
+  
+    
+}
+.splide__list img{
+    width: 100%;
+}
+.how-it-works{
+    cursor: pointer;
+}
+.navbar a{
+    cursor: pointer;
+}
+
+.doctor-icon{
+    width: 26em;
+}
+.section-icons{
+    width: 9em;
+    height: 100%;
+}
+
+
+
+.buzz__section-first-container{
+    max-width: 670px;
+    margin:0 auto;
+    padding-top:25px;
+
+}
+.buzz__section-first-container-wrapper{
+    width: 100%;
+    background-color:  $tealLight;
+    padding-bottom: 90px;
+
+}
+.buzz__section-second-container-wrapper{
+    width: 100%;
+    background-color: $white;
+    padding-top: 40px;
+    padding-bottom: 90px;
+
+}
+.buzz__section-third-container-wrapper{
+    width: 100%;   
+    padding-top: 40px;
+    background-color: $lightPeach;
+
+}
+
+.buzz__section-forth-container-wrapper{
+    padding-top: 60px;
+    padding-bottom: 30px;
+    width: 100%;   
+    background-color: $white;
+
+}
+.buzz__section-fifth-container-wrapper{
+    padding-top: 60px;
+    padding-bottom: 30px;
+    width: 100%;   
+    background-color: $purpleLight;
+
+}
+.buzz__section-sixth-container-wrapper{
+    padding-top: 60px;
+    padding-bottom: 30px;
+    width: 100%;   
+    background-color: $white;
+}
+.buzz__container--btn-tablet-purpleBtn{
+    @include buttonCustom;
+    background-color:$purple;
+    margin-top: 45px;
+
+}
+.saveUp1000marginTop{
+    margin-top: 30px;
+
+}
+.saveUp1000{
+    display: flex;
+   img{
+       width:150px;
+   }
+
+}
+.buzz__section-startGenerating-container-wrapper{
+    background-image: url('/images/stargGeneratingBackground.png');
+    background-color:$yellowLight;
+
+}
+.testimonialsTextImg{
+    width: 230px;
+}
+.personTestimonials{
+    width: 100px;
+
+}
+.tesimonialsArrows{
+    width: 50px;
+}
+.success_simplified{
+   text-align: center;
+}
+.alignTextCenter{
+    text-align: center;
+}
+.successContent{
+    justify-content: center;
+    display: flex;
+}
+.buzz__section--beingAdoctor-wrapper{
+    background-color: $blueLight;
+}
+.startGenerating{
+    
+    display: flex;
+}
+.buzz__section-first-container-curly{
+    justify-content: center;
+    display: flex;
+    border-radius: 32px;
+   
+    margin: 0 auto;
+    max-width: 700px;
+    background-color: $white;
+}
+.card{
+    margin-right:10px;
+    margin-left:10px;
+    background-color: $white;
+}
+.card__list{
+   
+    padding: 0;
+    text-align: center;
+
+}
+
+.card__list li{
+    height: 80px;
+    padding: 20px;
+    font-size: 20px;
+    list-style-type: none;
+}
+.dishIcon{
+    padding-top: 6px;
+}
+
+.doctorIcon{
+    width: 390px;
+    margin-left: -70px;
+}
+.patientRetension{
+    width: 240px;
+    p{
+        margin-top:20px;
+    }
+    
+}
+.patientRetension__smiley{
+    padding-left: 27em;
+    position: absolute;
+
+}
+.d__tablet{
+    margin-top: -75px;
+    padding-left: 121px;
+
+    p{
+        margin-top:20px;
+    }
+}
+
+.streaming-text{
+    width: 230px;
+}
+.buzz__container--btn{
+    @include buttonCustom;
+                background-color:$yellow;
+                margin-top: 45px;
+
+}
+.buzz__container--btn-tablet{
+    @include buttonCustom;
+    background-color:$peach;
+    margin-top: 45px;
+    
+
+}
+
+.buzz__section-second-container{
+    width: 100%;   
+    padding-top: 40px;
+    background-color: $white;
+
+}
+.buzz__section{
+   //max-width: 670px;
+   margin: 0 auto;
+}
+.image-child {
+    margin-left: auto;
+    order: 2;
+  }
+
+
+.section__first-row{
+    display: flex;
+    align-items: center;
+    
+   
+}
+.second-row-right-text{
+max-width: 237px;
+}
+
+.secondary_p{
+    margin-top: 46px;
+}
+.section__second-row{
+    display: flex;
+    
+    
+    
+    
+    ul{
+        list-style-type: none;
+        
+        font-family: "Times New Roman", Times, serif;
+        font-weight: 900;
+        font-size: 21px;
+        color: $dParagraph;
+
+        
+        
+    }
+    li:not(:first-child){
+        margin-top: 25px;
+    }
+    li{
+        float:left;
+        clear:left;
+        
+         
+        border-bottom: 4px solid $softBlue; 
+
+    }
+   
+}
+
+
+.pricing__wrapper h2,p{
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+}
+
+.footer{
+    background: linear-gradient(180deg, rgba(81, 77, 128, 0) 0%, #514D80 250%);
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+.footer a{
+    color:black;
+}
+
+.footer ul {
+    margin: 30px;
+    font-size: 20px;
+    list-style-type: none;
+    text-decoration: none;
+}
+.footer ul li {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.content__wraper{
+    background-color: $lightPeach;
+
+}
+.production__wrapper{
+    background-color: $blueLight;
+}
+.content__inner{
+    display: flex;
+    width: 670px;
+    margin:0 auto;
+}
+.canDoMain{
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 30px 5px #A5A5A5; 
+    box-shadow: 0px 0px 30px 5px #A5A5A5;
+    width: 760px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+}
+.whatInsideMain{
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 30px 5px #A5A5A5; 
+    box-shadow: 0px 0px 30px 5px #A5A5A5;
+    width: 760px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    margin-bottom: 200px;
+   // justify-content: center;
+
+}
+.whatInsideMain div{
+    padding-top: 25px;
+   
+    width: 100%;
+}
+.whatInsideMain .btn{
+    margin-top: 56px;
+}
+.boxMain{
+    background-color:$purpleLight;
+}
+.box-Main-Speeds-Background-Top{
+    margin:0 auto;
+    border-radius: 20px;
+    width: 600px;height: 200px;
+    background-color:$white;
+
+}
+.box-Main-Speeds-Background-Bottom{
+   
+    width: 760px;
+    height: 200px;
+    background-color: black;
+    border-radius: 20px;
+    margin:0 auto;
+
+}
+.boxImg{
+    margin-top: -340px;
+}
+.speedBackground{
+    margin: 0 auto;
+    width: 1000px;
+    height: 300px;
+    background-image: url('/images/speedBackground.png');
+    background-repeat:no-repeat;
+    background-size: contain;
+}
+
+.inet-speed__items{
+    display: flex;
+}
+.inet-speed__items-padding{
+    padding-left: 50px;
+    width: 190px;
+    text-align: center;
+    padding-top: 60px;
+}
+.inet-speed__items img{
+    width: 40px;
+}
+.inet-speed__items .spanLGreen{
+    font-size: 15px;
+    color: $teal;
+}
+.spanLightGreen{
+    font-size: 15px;
+    color: $green;
+}
+.canDoMain img{ 
+    width: 90px;
+}
+.canDoMain p{ 
+   font-size: 30px;
+   color: $teal;
+}
+
+.canDoMain div{ 
+    padding-top: 11px;
+    padding-bottom: 18px;
+      width: 190px;
+   // padding: 20px;   
+}
+.plugAndPalyTitle{
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.WhatCanTitle{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 45px;
+}
+.WhatCanTitle span{
+    font-size: 30px;
+}
+
+.content{
+    text-align: center;
+    width: 670px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.two-circles-background{
+    height: 350px;
+    background-image: url('/images/twoCirclesUnion.svg');
+    background-repeat:no-repeat;
+    background-size: contain;
+
+}
+
+.waitng-room-patients{
+    position: relative;
+    width: 50px;
+    text-align: center;
+}
+
+.patient-engagement{
+    position: relative;
+    width: 50px;
+   
+    
+
+}
+.our-missionTxt{
+    font-family: maria;
+    font-size: 30px;
+}
+
+.never-miss-form{
+   // padding: 30px;
+    
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    background-color:$white;
+    width: 800px;
+   
+    justify-content: center;
+    border-radius: 10px;
+    height: 70px;
+    margin-bottom: 60px;
+    align-items: center;
+
+}
+.never-miss-form input{
+    height: 40px;
+    border: none;
+    background-color: #F6F8F9;
+    margin-right: 50px;
+    border-radius: 10px;
+}
+.never-miss-form input{
+    padding-left: 20px;
+    
+}
+.form-left-button{
+    margin-top: 20px;
+    padding: 12px 24px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-family: maria;
+    color: $white;
+    background-color:$teal;
+
+    
+
+}
+.form-left-button:hover{
+    background-color: greenyellow;
+
+}
+
+.never-miss-form button{
+        padding: 12px 24px;
+        border: none;
+        outline: none;
+        border-radius: 50px;
+        font-family: maria;
+        
+        background-color:$yellow;
+
+    
+}
+
+  /* privacy page css start */
+  .privacy-section{
+    width: 100%;
+    background-color: #EFF8FA;
+    background-image: url('/images/contactUsBackImage.png');
+
+}
+.privacy-section>div{
+    display: flex;
+    width: 900px;
+    margin: 0 auto;
+
+}
+.privacy-section>div>div{
+    width: 450px
+
+}
+.privacy-section>div:nth-child(2){
+    width: 450px
+
+}
+.width-100-Per{
+    width: 100%;
+}
+.width-350-px{
+    width: 350px;
+}
+.width-450-px-m-left-50px{
+    width: 450px;
+    margin-left: 50px;
+
+}
+.content-terms-section h3{
+    font-family: maria;
+}
+.privacy-section>div>div>h1{
+    font-family: maria;
+    font-size: 40px;
+    padding-top: 60px;
+
+}
+.privacy-content-section h3,.privacy-section h3{
+    font-family: maria;
+}
+.privacy-content-section>div,.terms-page-section{
+    display: flex;
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 100px;
+
+
+}
+.privacy-paragraph{
+    margin-top: 0px;
+    line-height: 30px;
+
+}
+/* privacy page css end */
+
+
+
+

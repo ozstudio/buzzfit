@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".main-content").load("main-page.html");
+
+            $(".how-it-works").click(function(){
+            $(".main-content").load("howitworks.html");
+            
+            });
+            $(".content-link").click(function(){
+                        $(".main-content").load("content.html");
+                        
+            });
+            $(".device-link").click(function(){
+                        $(".main-content").load("device.html");
+                        
+            });
+            $(".privacy-policy").click(function(){
+                        $(".main-content").load("privacy.html");
+                        
+            });
+
+  
+});
+
+    </script>
+    <title>BuzzFit</title>
+</head>
+<body>
+  
+
+   <!--main-->
+   <div class="buzz">
+
+
+
+    <!-- navbar -->
+    <nav class="navbar">
+        <a href="" class="navbar__logo"><img src="./images/Logo main.svg" alt=""></a>
+        <div class="navbar__bars">
+         <i class="fas fa-bars">burg</i>
+        </div>
+        <div class="navbar__menu">
+            <a class="navbar__menu--links how-it-works">How it works</a>
+            <a class="navbar__menu--links content-link">Content</a>
+            <a class="navbar__menu--links device-link" >Device</a>
+            <a class="navbar__menu--links login-link">Login</a>
+            <a class="navbar__menu--links get-now-link"><button>GET NOW</button></a>
+        </div>
+    </nav>
+
+
+    <div class="main-content">
+
+    </div>
+
+
+<!-- footer -->
+<footer>
+    <div class="footer" >
+        <div>
+            <ul>
+                <li><img src="/images/buzzfitTableIcon.svg" alt=""></li>
+                <li><a href=""><img src="/images/Union.png" alt=""></a> <a href=""><img src="/images/twitter.png" alt=""></a></li>
+                <li>Copyright 2021. Buzz Fit.</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Company</li>
+                <li><a href="">About us</a></li>
+                <li><a class="how-it-works">How it works</a></li>
+                <li><a href="">Device</a></li>
+                <li><a href="">Buy Now</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Support</li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Cookies</a></li>
+                <li><a class="privacy-policy">Privacy policy</a></li>
+                <li><a href="">T’s & C’s</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Community</li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Advertise with us</a></li>
+               
+            </ul>
+        </div>
+        <div>
+            <img src="/images/arrowTop.png" alt="top arrow">
+        </div>
+   
+    </div>
+   </footer>
+  </div>
+   </div>
+    
+</body>
+</html>

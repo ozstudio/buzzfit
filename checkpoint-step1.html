@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <style>
+        .vertical-center {
+        
+        position: absolute;
+        top: 50%;
+        left: 266px;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        cursor: pointer;
+}
+.form-left{
+    border-radius: 10px;
+    padding: 20px;
+}
+.form-left p{
+    margin: 0;
+    font-family: maria;
+
+}
+.shadows {
+    -webkit-box-shadow: 0px 0px 15px 2px #A8A8A8; 
+            box-shadow: 0px 0px 15px 2px #A8A8A8;
+}
+    </style>
+    <title>Document</title>
+
+</head>
+<body>
+    <div>
+        <nav class="navbar">
+            <a href="" class="navbar__logo"><img src="./images/Logo main.svg" alt=""></a>
+            <div class="navbar__bars">
+             <i class="fas fa-bars">burg</i>
+            </div>
+            <div class="navbar__menu">
+                <a href="" class="navbar__menu--links">How it works</a>
+                <a href="" class="navbar__menu--links">Content</a>
+                <a href="" class="navbar__menu--links">Device</a>
+                <a href="" class="navbar__menu--links">Login</a>
+                <a href="" class="navbar__menu--links"><button>GET NOW</button></a>
+            </div>
+        </nav>
+
+
+        <div style="width: 900px;margin: 0 auto;">
+            <div class="w3-bar w3-black shadows" style="position: relative;width: 100%;height:100px;border-radius: 20px;
+            ">
+                <div class="vertical-center">
+                    <span class="w3-bar-item w3-button " style="font-family: maria;font-size: 25px;color: #61B2AA;border-bottom: 6px solid;" onclick="openCity('London')">Step 1 <span style="font-family: maria;color: black;font-size: 15px;">Customer info  ></span></span>
+                    <span class="w3-bar-item w3-button "  style="font-family: maria;font-size: 25px;color: #61B2AA;" onclick="openCity('Paris')">Step 2 <span style="font-family: maria;color: black;font-size: 15px;">Payment </span></span>
+    
+                </div>
+                
+
+            </div>
+              
+          
+              
+              <div  style="margin-top: 50px;width: 860px;" id="London" class="w3-container city personal-information">
+                    <!-- form -->
+                    <div style="display: flex;">
+        <div class="shadows"  style="border-radius: 10px;margin: 0 auto;padding: 20px;">
+            <div style="width: 480px;">
+                <p style="font-size: 18px;">
+                    Personal information
+                </p>
+                
+            </div>
+            <div style="width: 480px;margin-bottom: 25px;">
+                <input style="width: 230px;height: 40px;border: none;background-color: #F6F8F9;border-radius: 5px;margin-right: 11px;" type="text" id="fname" name="firstname" placeholder="Email">
+                <input style="width: 230px;height: 40px;border: none;background-color: #F6F8F9;border-radius: 5px;" type="text" id="fname" name="firstname" placeholder="Confirm Email">
+
+
+            </div>
+            <div style="width: 480px;">
+                <input style="height: 40px;border: none;background-color: #F6F8F9;border-radius: 5px;margin-right: 10px;" type="text" id="fname" name="firstname" placeholder="First name">
+                <input style="height: 40px;border: none;background-color: #F6F8F9;border-radius: 5px;margin-right: 10px;" type="text" id="fname" name="firstname" placeholder="Last name">
+                <input style="height: 40px;border: none;background-color: #F6F8F9;border-radius: 5px;" type="text" id="fname" name="firstname" placeholder="Title">
+
+
+            </div>
+            <div style="width: 480px;margin-bottom: 25px;margin-top: 25px;">
+                <input style="width: 230px;height: 40px;border: none;background-color: #F6F8F9;border-radius: 5px;margin-right: 11px;" type="text" id="fname" name="firstname" placeholder="Your NPI number">
+                <input style="width: 230px;height: 40px;border: none;background-color: #F6F8F9;border-radius: 5px;" type="number" id="fname" name="firstname" placeholder="Phone number">
+
+
+            </div>
+
+
+            <div style="width: 480px;">
+                <p style="font-size: 18px;">
+                    Shipping details
+                </p>
+                <div>
+                    <input style="width:100%;height: 40px;border: none;background-color: #F6F8F9;border-radius: 5px;" type="text" id="fname" name="firstname" placeholder="Business name">
+
+                </div>
+                <div>
+                    <input style="margin-top: 25px;width:100%;height: 40px;border: none;background-color: #F6F8F9;border-radius: 5px;" type="text" id="fname" name="firstname" placeholder="Shipping address">
+
+                </div>
+                
+                <div style="margin-top: 25px;">
+                    <input style="height: 40px;border: none;background-color: #F6F8F9;border-radius: 5px;margin-right: 10px;" type="text" id="fname" name="firstname" placeholder="City">
+                    <input style="height: 40px;border: none;background-color: #F6F8F9;border-radius: 5px;margin-right: 10px;" type="text" id="fname" name="firstname" placeholder="Shipping state">
+                    <input style="height: 40px;border: none;background-color: #F6F8F9;border-radius: 5px;" type="number" id="fname" name="firstname" placeholder="ZIP code">
+    
+
+                </div>
+
+                
+            </div>
+            <div>
+
+            </div>
+           
+            <div style="text-align: end;"><button class="form-left-button" onclick="openCity('Paris')" >NEXT</button></div>
+            <div>
+                
+            </div>
+
+        </div>
+
+
+        <div class="shadows" style="border-radius: 10px;padding: 20px;">
+            <div style="padding: 15px 20px;"><h4 style="font-family: maria;font-size: 25px;">order summary</h4></div>
+            <div style="display: flex;">
+            <div><img src="/images/orderBoxImage.png" alt=""></div>
+            <div style="margin-left: 10px;"><span style="font-style: bold;">Buzz Fit Box Service</span>
+                <p>Refundable deposit</p>
+                <p>$199.00 USD</p>
+            </div>
+
+
+            </div>
+            <div style="border:1px solid"></div>
+            <div style="display: flex;">
+                <div><p>Subtotal:</p><p>Shipping:</p></div>
+                <div style="margin-left: 30px;"><p>$199.00 USD</p><p>Included</p></div>
+            
+            </div>
+            <div style="border:1px solid"></div>
+            <div style="display: flex;">
+                <div><p>Total</p></div>
+                <div><p>$199.00 USD</p></div>
+            </div>
+            <div style="display: flex;">
+                <div><img src="/images/nortonImage.png" alt=""></div>
+                <div><img src="/images/mcafeeImage.png" alt=""></div>
+            </div>
+
+        </div>
+    </div>
+
+              </div>
+              
+
+
+
+
+
+              <div id="Paris" class="w3-container city" style="margin-top: 50px;width: 860px;display:none">
+                           <!-- form -->
+                           <div style="display: flex;">
+                            <div class="shadows"  style="border-radius: 10px;margin: 0 auto;padding: 20px;">
+                                <div style="width: 480px;">
+                                    <div>
+                                        <img src="/images/cardsImages.png" alt="">
+                                    </div>
+                                    <p style="font-size: 18px;">
+                                        credit card information
+                                    </p>
+                                    
+                                </div>
+                                <div style="width: 480px;margin-bottom: 25px;">
+                                    <input style="width: 230px;height: 40px;border: none;background-color: #F6F8F9;border-radius: 5px;margin-right: 11px;" type="text" id="fname" name="firstname" placeholder="name on card">
+                                    <input style="width: 230px;height: 40px;border: none;background-color: #F6F8F9;border-radius: 5px;" type="number" id="fname" name="firstname" placeholder="card number">
+                    
+                    
+                                </div>
+                                <div style="width: 480px;">
+                                    <input style="height: 40px;border: none;background-color: #F6F8F9;border-radius: 5px;margin-right: 10px;" type="number" id="fname" name="firstname" placeholder="Expiry date">
+                                    <input style="height: 40px;border: none;background-color: #F6F8F9;border-radius: 5px;margin-right: 10px;" type="number" id="fname" name="firstname" placeholder="CVV">
+                    
+                    
+                                </div>
+                                
+                    
+                    
+                                <div style="width: 480px;">
+                                    <p style="font-size: 18px;">
+                                       Billing details
+                                    </p>
+                                    <div>
+                                        <input style="width:100%;height: 40px;border: none;background-color: #F6F8F9;border-radius: 5px;" type="text" id="fname" name="firstname" placeholder="Billing address">
+                    
+                                    </div>
+                              
+                                    
+                                    <div style="margin-top: 25px;">
+                                        <input style="height: 40px;border: none;background-color: #F6F8F9;border-radius: 5px;margin-right: 10px;" type="text" id="fname" name="firstname" placeholder="Billing city">
+                                        <input style="height: 40px;border: none;background-color: #F6F8F9;border-radius: 5px;margin-right: 10px;" type="text" id="fname" name="firstname" placeholder="Billing state">
+                                        <input style="height: 40px;border: none;background-color: #F6F8F9;border-radius: 5px;" type="text" id="fname" name="firstname" placeholder="Billing ZIP">
+                        
+                    
+                                    </div>
+                    
+                                    
+                                </div>
+                                <div>
+                    
+                                </div>
+                               
+                                <div style="text-align: end;"><button class="form-left-button" onclick="openCity('Paris')" >APPLY</button></div>
+                                <div>
+                                    
+                                </div>
+                    
+                            </div>
+                    
+                    
+                            <div class="shadows" style="border-radius: 10px;padding: 20px;">
+                                <div style="padding: 15px 20px;"><h4 style="font-family: maria;font-size: 25px;">order summary</h4></div>
+                                <div style="display: flex;">
+                                <div><img src="/images/orderBoxImage.png" alt=""></div>
+                                <div style="margin-left: 10px;"><span style="font-style: bold;">Buzz Fit Box Service</span>
+                                    <p>Refundable deposit</p>
+                                    <p>$199.00 USD</p>
+                                </div>
+                    
+                    
+                                </div>
+                                <div style="border:1px solid"></div>
+                                <div style="display: flex;">
+                                    <div><p>Subtotal:</p><p>Shipping:</p></div>
+                                    <div style="margin-left: 30px;"><p>$199.00 USD</p><p>Included</p></div>
+                                
+                                </div>
+                                <div style="border:1px solid"></div>
+                                <div style="display: flex;">
+                                    <div><p>Total</p></div>
+                                    <div><p>$199.00 USD</p></div>
+                                </div>
+                                <div style="display: flex;">
+                                    <div><img src="/images/nortonImage.png" alt=""></div>
+                                    <div><img src="/images/mcafeeImage.png" alt=""></div>
+                                </div>
+                    
+                            </div>
+                        </div>
+                     
+              </div>
+              
+             
+              
+              <script>
+              function openCity(cityName) {
+                var i;
+                var x = document.getElementsByClassName("city");
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";  
+                }
+                document.getElementById(cityName).style.display = "block";  
+              }
+              </script>
+              
+        </div>
+    </div>
+    
+</body>
+</html>
